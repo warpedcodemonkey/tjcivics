@@ -1,0 +1,10 @@
+I need a reactjs website built that will be hosted in AWS S3 The site will need all of the same pages as https://middleburgcivicassociation.com . This application will be the website for the Thomas Jefferson Civics center. There is some information available on this site: https://awssimplified.com/tj_civic_center.html .
+Content for the pages can be place holders for the time being.
+
+Where there are images put in place holder images. 
+
+The calendar page will need a dynamodb backend. 
+
+When a user selects a date and time on the calendar, they will be taken through a work flow, that will allow them to electronically sign a PDF file, we will need to create this process, and make a payment using Square Up payment processing service. More information about the square payment processing can be found here: https://developer.squareup.com/us/en
+
+

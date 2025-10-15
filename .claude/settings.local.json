@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:middleburgcivicassociation.com)",
+      "WebFetch(domain:awssimplified.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
