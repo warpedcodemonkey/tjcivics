@@ -103,6 +103,24 @@ class SquarePaymentService {
   private async sendPaymentToBackend(data: any): Promise<any> {
     const apiUrl = import.meta.env.VITE_API_BASE_URL || '';
 
+    // Development mode: Simulate successful payment if no backend is configured
+    if (!apiUrl || apiUrl === 'http://localhost:3000/api') {
+      console.log('Development mode: Simulating payment processing');
+      console.log('Payment data:', data);
+
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      // Return simulated successful response
+      return {
+        transactionId: 'DEV-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+        status: 'COMPLETED',
+        amount: data.amount,
+        timestamp: new Date().toISOString(),
+      };
+    }
+
+    // Production mode: Call actual backend API
     // In production, this would call your backend API
     // which would use Square's Payments API to process the payment
     const response = await fetch(`${apiUrl}/process-payment`, {
