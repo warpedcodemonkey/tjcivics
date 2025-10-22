@@ -12,7 +12,6 @@ const MakePayment = () => {
     // Placeholder for Square payment integration
     setTimeout(() => {
       setIsProcessing(false);
-      alert('Payment processing placeholder - Square integration will be implemented here');
     }, 2000);
   };
 
@@ -146,7 +145,7 @@ const MakePayment = () => {
                         <input
                           type="text"
                           placeholder="•••• •••• •••• ••••"
-                          disabled
+                          
                         />
                       </div>
 
@@ -156,7 +155,7 @@ const MakePayment = () => {
                           <input
                             type="text"
                             placeholder="MM/YY"
-                            disabled
+                            
                           />
                         </div>
 
@@ -165,7 +164,7 @@ const MakePayment = () => {
                           <input
                             type="text"
                             placeholder="•••"
-                            disabled
+                            
                           />
                         </div>
                       </div>
@@ -175,7 +174,7 @@ const MakePayment = () => {
                         <input
                           type="text"
                           placeholder="Name on card"
-                          disabled
+                          
                         />
                       </div>
 
@@ -184,7 +183,7 @@ const MakePayment = () => {
                         <input
                           type="text"
                           placeholder="12345"
-                          disabled
+                          
                         />
                       </div>
                     </div>
